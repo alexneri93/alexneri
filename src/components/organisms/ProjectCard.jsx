@@ -4,7 +4,7 @@ import Badge from '../atoms/Badge'
 function ProjectCard({name, image, imageAlt, link, skills, projectId}) {
     return (
         <article className="flex flex-col gap-2 mb-3 lg:mb-10">
-            <img src={image} alt={imageAlt} className="rounded-lg border-1 border-solid border-slate-200"/>
+            <img src={image} alt={imageAlt} loading="lazy" className="rounded-lg border-1 border-solid border-slate-200"/>
             <Title level={3} size="small">
                 <a href={link} target="_blank" className="flex items-center">
                     <span className="mr-2">{name}</span>
