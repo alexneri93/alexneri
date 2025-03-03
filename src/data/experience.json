@@ -1,0 +1,23 @@
+[
+  {
+    "id": "exp1",
+    "name": "Frontend Engineer · Gartner Digital Markets",
+    "date": "Apr 2022 - Present",
+    "skills": ["Elixir", "Webpack", "React", "Typescript", "Javascript", "HTML & CSS", "SCSS", "Bootstrap"],
+    "description": "Build and maintain all the frontend ecosystem for all the local sites of the company. Lead the accessibility initiative, and contribute to the code quality standards and best practices in all the UI components of the web in a component-based framework. Take care of the analytics and tags using Google Tag Manager."
+  },
+  {
+    "id": "exp2",
+    "name": "Frontend Developer · Grupo Godo de Comunicación",
+    "date": "Feb 2017 - Apr 2022",
+    "skills": ["Webpack", "Gulp", "Javascript", "HTML & CSS", "SCSS", "LESS", "Bootstrap", "PHP"],
+    "description": "Build and style high-traffic media website, with special focus on the technical SEO and the web performance. Led some initiatives to make thhe webs more usable and accessible and to make them faster improving its performance. Development of Google AMP pages and newsletters for all the brands of the company."
+  },
+  {
+    "id": "exp3",
+    "name": "Frontend Developer · Grupo Hotusa",
+    "date": "Feb 2015 - Feb 2017",
+    "skills": ["Grunt", "Angular", "Javascript", "HTML & CSS", "LESS", "PHP", "Wordpress"],
+    "description": "Build web components for the site and transition some applications from jQuery to Angular. Work closely with cross-funtional teams, including developers, designers and product managers."
+  }
+]
