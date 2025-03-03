@@ -52,7 +52,7 @@ function App() {
 
         <section id="projects" className="my-10 flex flex-col gap-6 lg:mt-25 px-5">
           <Title size="medium" level={2}>PROJECTS</Title>
-          <div className="flex flex-col gap-6 lg:columns-2 lg:block">
+          <div className="flex flex-col gap-6 lg:grid lg:grid-cols-2">
             {projectsData.map((project) => (
               <ProjectCard
                 key={project.id} 
