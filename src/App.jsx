@@ -9,6 +9,7 @@ import ProjectCard from './components/organisms/ProjectCard.jsx'
 import Footer from './components/organisms/Footer.jsx'
 import esperiencedata from './data/experience.json';
 import { projectsData } from './data/projects.js';
+import monster from './assets/monster.svg';
 
 function App() {
 
@@ -19,7 +20,7 @@ function App() {
           <Title>Alejandro Neri</Title>
           <Text size="large">Frontend Engineer</Text>
           <div className="w-[60%]">
-            <Text size="medium">I build accessible, pixel-perfect digital experiences for the web.</Text>
+            <Text size="medium">I craft accessible, pixel-perfect web digital experiences</Text>
           </div>
           <NavigationDesktop/>
         </div>
@@ -32,16 +33,25 @@ function App() {
       </header>
 
       <main className="lg:col-span-4">
+        <div className="wrapper">
+          <div className="bg">
+              <img className="animate-bounce absolute left-[40px] top-[30%]" src={monster} width="120" height="120"/>
+          </div>
+          <div className="bg">
+              <img className="animate-bounce absolute left-[40px] top-[30%]" src={monster} width="120" height="120"/>
+          </div>
+        </div>
+        
         <Navigation/>
 
-        <section id="about" className="my-10 flex flex-col gap-6 px-5">
+        <section id="about" className="py-10 flex flex-col gap-6 px-5">
           <Title size="medium" level={2}>ABOUT</Title>
-          <Text size="medium">I am a software developer with a passion for graphic design, accessibility and web performance. I like to create pixel-perfect user interfaces that blend thoughtful design with robust engineering. My favorite work lies at the intersection of design and development, creating experiences that not only look great but are meticulously built for performance and usability.</Text>
+          <Text size="medium">I am a software developer with a passion for graphic design, accessibility and web performance. I specialize in crafting pixel-perfect user interfaces that seamlessly merge sophisticated design principles with robust engineering solutions. I thrive where design meets development, crafting experiences that combine stunning aesthetics with thoughtful engineering for optimal performance and usability.</Text>
           <Text size="medium">Currently I'm a Frontend Engineer at <a className="underline hover:text-slate-400" href="https://www.gartner.com/en/digital-markets">Gartner Digital Markets</a>. I contribute to the creation and maintenance of UI components that power Gartbner Digital Matkets local sites frontend, always having in mind the accessibility, performance and best practices.</Text>
           <Text size="medium">My experience is best represented by my work at <a className="underline hover:text-slate-400" href="https://www.gartner.com/en/digital-markets">Gartner</a>, <a className="underline hover:text-slate-400" href="https://www.grupogodo.com/">GrupoGodo</a> and <a className="underline hover:text-slate-400" href="https://www.grupohotusa.com/">Hotusa</a> where I contributed to product design, accessibility and performance initiatives, and engineering.</Text>
         </section>
 
-        <section id="experience" className="my-10 flex flex-col gap-6 lg:mt-25 px-5">
+        <section id="experience" className="py-10 flex flex-col gap-6 px-5">
           <Title size="medium" level={2}>EXPERIENCE</Title>
           {esperiencedata.map((exp) => (
             <ExperienceCard key={exp.id} expid={exp.id} name={exp.name} date={exp.date} skills={exp.skills}>
@@ -50,7 +60,7 @@ function App() {
           ))}
         </section>
 
-        <section id="projects" className="my-10 flex flex-col gap-6 lg:mt-25 px-5">
+        <section id="projects" className="py-10 flex flex-col gap-6 px-5">
           <Title size="medium" level={2}>PROJECTS</Title>
           <div className="flex flex-col gap-6 lg:grid lg:grid-cols-2">
             {projectsData.map((project) => (
